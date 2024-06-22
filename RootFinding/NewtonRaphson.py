@@ -30,7 +30,7 @@ def newtown_raphson(f, df, x0, tolerance, maxIter):
         if err < tolerance:
             break
         else:
-            --maxIter
+            maxIter-=1
     return x, x_list, y_list
 
 

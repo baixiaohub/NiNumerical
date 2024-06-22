@@ -32,7 +32,7 @@ def false_position(f, xl, xr, tolerance, maxIter):
         if err < tolerance:
             break
         else:
-            --maxIter
+            maxIter-=1
     return xm, x_list, y_list
 
 
