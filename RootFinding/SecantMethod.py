@@ -17,7 +17,7 @@ def secant(f, x0, x1, tolerance, maxIter):
     while maxIter > 0:
         fx0 = f(x0)
         fx1 = f(x1)
-        df = (fx0 - fx1) / (x0 - x1)
+        df = (fx0 - fx1) / (x0 - x1) # different with newton_raphson
         x_new = x1 - fx1 / df
         err = fabs(x_new - x1) / x_new * 100.0
 
