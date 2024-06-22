@@ -29,7 +29,6 @@ def false_position(f, xl, xr, tolerance, maxIter):
 
         x_list = np.append(x_list, xm)
         y_list = np.append(y_list, fxm)
-        print(err)
         if err < tolerance:
             break
         else:
