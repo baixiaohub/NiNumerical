@@ -8,7 +8,7 @@ def df(x):
     return 2*x + 3
 
 
-def gradient_decent(f, df, x0, k):
+def gradient_descent(f, df, x0, k):
     x = x0
     epsilon = 1e-4
     max_iter = 100
@@ -19,4 +19,4 @@ def gradient_decent(f, df, x0, k):
 
 if __name__ == '__main__':
     x, fx = gradient_decent(f, df, 300, 0.1)
-    print('min f(x) at x:{}, f(x):{}'.format(x, fx))
+    print('min f(x) = x*x + 3*x - 1,  at x:{}, f(x):{}'.format(x, fx))
